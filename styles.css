@@ -1,0 +1,119 @@
+:root {
+  /* colors */
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-dkCyan: hsl(179, 100%, 13%);
+  --clr-trnspWhite: hsla(0, 0%, 100%, 0.75);
+  --clr-ltGray: hsl(0, 0%, 95%);
+
+  /* font weights */
+  --wt-400: 400;
+  --wt-700: 700;
+
+  /* fonts */
+  --font-lexend-deca: "Lexend Deca", sans-serif;
+  --font-big-shoulders-display: "Big Shoulders Display", sans-serif;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+}
+
+h2{
+    font-family: var(--font-big-shoulders-display);
+    color: var(--clr-ltGray);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.container {
+  max-width: 300px;
+  font-family: var(--font-lexend-deca);
+  color: var(--clr-trnspWhite);
+}
+
+.container a{
+    background-color: var(--clr-ltGray);
+    padding: .75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: var(--wt-400);
+}
+
+.container p{
+    margin-bottom: 2.5rem;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sedans-col,
+.suvs-col,
+.luxury-col {
+  padding: 2rem 2rem 3.5rem 2rem;
+}
+
+.sedans-col {
+  background-color: var(--clr-orange);
+  border-radius: .5rem .5rem 0 0;
+}
+
+.sedans-col a{
+    color: var(--clr-orange);
+}
+
+.sedans-col a:hover{
+    background-color: var(--clr-orange);
+    color: var(--clr-ltGray);
+}
+
+.suvs-col {
+  background-color: var(--clr-cyan);
+}
+
+.suvs-col a{
+    color: var(--clr-cyan);
+}
+
+.suvs-col a:hover{
+    background-color: var(--clr-cyan);
+    color: var(--clr-ltGray);
+}
+
+.luxury-col {
+  background-color: var(--clr-dkCyan);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.luxury-col a{
+    color: var(--clr-dkCyan);
+}
+
+.luxury-col a:hover{
+    background-color: var(--clr-dkCyan);
+    color: var(--clr-ltGray);
+}
+
+/* pre-included attribution css moved from index <style> */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
