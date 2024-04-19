@@ -34,11 +34,11 @@ main {
   height: 170vh;
 }
 
-h2{
-    font-family: var(--font-big-shoulders-display);
-    color: var(--clr-ltGray);
-    font-size: 2rem;
-    margin: 1rem 0;
+h2 {
+  font-family: var(--font-big-shoulders-display);
+  color: var(--clr-ltGray);
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .container {
@@ -47,19 +47,19 @@ h2{
   color: var(--clr-trnspWhite);
 }
 
-.container a{
-    background-color: var(--clr-ltGray);
-    padding: .75rem 1.5rem;
-    border-radius: 2rem;
-    text-decoration: none;
-    border: 2px solid white;
-    font-weight: var(--wt-400);
+.container a {
+  background-color: var(--clr-ltGray);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: var(--wt-400);
 }
 
-.container p{
-    margin-bottom: 2.5rem;
-    font-size: 15px;
-    line-height: 1.5;
+.container p {
+  margin-bottom: 2.5rem;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .sedans-col,
@@ -70,43 +70,43 @@ h2{
 
 .sedans-col {
   background-color: var(--clr-orange);
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.sedans-col a{
-    color: var(--clr-orange);
+.sedans-col a {
+  color: var(--clr-orange);
 }
 
-.sedans-col a:hover{
-    background-color: var(--clr-orange);
-    color: var(--clr-ltGray);
+.sedans-col a:hover {
+  background-color: var(--clr-orange);
+  color: var(--clr-ltGray);
 }
 
 .suvs-col {
   background-color: var(--clr-cyan);
 }
 
-.suvs-col a{
-    color: var(--clr-cyan);
+.suvs-col a {
+  color: var(--clr-cyan);
 }
 
-.suvs-col a:hover{
-    background-color: var(--clr-cyan);
-    color: var(--clr-ltGray);
+.suvs-col a:hover {
+  background-color: var(--clr-cyan);
+  color: var(--clr-ltGray);
 }
 
 .luxury-col {
   background-color: var(--clr-dkCyan);
-  border-radius: 0 0 .5rem .5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.luxury-col a{
-    color: var(--clr-dkCyan);
+.luxury-col a {
+  color: var(--clr-dkCyan);
 }
 
-.luxury-col a:hover{
-    background-color: var(--clr-dkCyan);
-    color: var(--clr-ltGray);
+.luxury-col a:hover {
+  background-color: var(--clr-dkCyan);
+  color: var(--clr-ltGray);
 }
 
 /* pre-included attribution css moved from index <style> */
@@ -116,4 +116,41 @@ h2{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* non-mobile settings */
+@media (min-width: 1050px) {
+  main {
+    height: 100vh;
+  }
+
+  h2{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  .container p {
+    margin-bottom: 6rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .sedans-col {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .luxury-col {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .sedans-col,
+  .suvs-col,
+  .luxury-col {
+    padding: 3rem 3rem 4rem 3rem;
+  }
 }
